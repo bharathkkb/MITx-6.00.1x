@@ -54,11 +54,11 @@ def isWordGuessed(secretWord, lettersGuessed):
       False otherwise
     '''
     # FILL IN YOUR CODE HERE...
-    wrdlst=list(secretWord)
+    wrdlst=list(secretWord) #making the secretWord chars into a list
     
-    wrdlst=list(set(wrdlst))
+    wrdlst=list(set(wrdlst)) # using the set function to remove duplicates from the list and re casting it as list
      
-    lettersGuessed=list(set(lettersGuessed))
+    lettersGuessed=list(set(lettersGuessed))# similarly removing duplicated from the letters guessed
     
     
     c=0
@@ -83,7 +83,7 @@ def isWordGuessed(secretWord, lettersGuessed):
             
         
 
-    if(c == len(wrdlst)):
+    if(c == len(wrdlst)):#if the number of matched chars eqals the len of the wrdlist then its a match
         
         return True
         
@@ -99,6 +99,7 @@ def getGuessedWord(secretWord, lettersGuessed):
       what letters in secretWord have been guessed so far.
     '''
     # FILL IN YOUR CODE HERE...
+    #similar to the earlier fuction, with a modification for returning the string
     wrdlst=list(secretWord)
     
     wrdlst=list(set(wrdlst))
